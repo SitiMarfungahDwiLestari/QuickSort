@@ -93,7 +93,8 @@ namespace QuickSort
             //Sort the list on the left of pivot using quick sort
             q_sort(low, j - 1);
 
-            
+            //sort the list on the right of the pivot using quick sort
+            q_sort(j + 1, high);
         }
         static void Main(string[] args)
         {
