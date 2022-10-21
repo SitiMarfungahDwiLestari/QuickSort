@@ -32,7 +32,7 @@ namespace QuickSort
             Console.WriteLine("\n================================================");
 
             //get array elements
-            for (int i = 0; i < n; i++) ;
+            for (int i = 0; i < n; i++)
             {
                 Console.Write("<" + (i + 1) + ">");
                 string s1 = Console.ReadLine();
@@ -40,7 +40,22 @@ namespace QuickSort
             }
         }
 
+        //swaps the element at index x with the element at index y
+        void swap (int x, int y)
+        {
+            int temp;
 
+            temp = arr[x];
+            arr[x] = arr [y];
+            arr[y] = temp;
+        }
+
+        public void q_sort(int low,int high)
+        {
+            int pivot, i, j;
+            if (low < high)
+                return;
+        }
 
 
 
